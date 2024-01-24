@@ -95,7 +95,7 @@ for address in "${validator_addresses[@]}"; do
 
   ratio=$((signed_count * 100 / (signed_count + missed_count)))
 
-  echo "Validator Address: $address - Signed: $signed_count, Missed: $missed_count, Ratio: $ratio%"
+   echo -e "Validator Address: $address - Signed: \033[1;33m$signed_count\033[0m, Missed: \033[1;33m$missed_count\033[0m, Ratio: \033[1;33m$ratio%\033[0m"
 done
 
 echo "Start Block: $start_block | End Block: $end_block"
