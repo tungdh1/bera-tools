@@ -4,7 +4,7 @@
 # v0.0.1
 
 rpc_url="http://localhost:26657"
-blocks_to_scan=100
+blocks_to_scan=2000
 
 #default validator address
 get_default_validator_address() {
